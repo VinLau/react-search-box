@@ -28,6 +28,7 @@ export default class ReactSearchBox extends Component {
      * autoFocus: Focus on the input box once the component is mounted.
      * onFocus: A function which acts as a callback when the input is focussed.
      * onChange: A function which acts as a callback when the input value is changed.
+     * onKeyUp: A function which acts as a callback when a key is released. FORKED AND ADDED FOR PROJECT!
      * inputBoxFontColor: Color of the text in the input box.
      * inputBoxBorderColor: Color of the border of the input box.
      * inputBoxFontSize: Size of the font of the input box.
@@ -42,6 +43,7 @@ export default class ReactSearchBox extends Component {
     onSelect: PropTypes.func,
     onFocus: PropTypes.func,
     onChange: PropTypes.func,
+    onKeyUp: PropTypes.func,
     inputBoxFontColor: PropTypes.string,
     inputBoxBorderColor: PropTypes.string,
     inputBoxFontSize: PropTypes.string,
@@ -207,6 +209,7 @@ export default class ReactSearchBox extends Component {
         value={value}
         onChange={this.handleInputChange}
         autoFocus={autoFocus ? autoFocus : undefined}
+        onKeyUp={onKeyUp ? onKeyUp : undefined}
         onFocus={onFocus ? onFocus : undefined}
         inputBoxFontColor={inputBoxFontColor}
         inputBoxBorderColor={inputBoxBorderColor}
