@@ -40,6 +40,7 @@ class InputBox extends Component {
       value,
       onChange,
       onFocus,
+      onKeyUp,
       inputBoxFontColor,
       inputBoxBorderColor,
       inputBoxFontSize,
@@ -53,6 +54,7 @@ class InputBox extends Component {
         value={value}
         onChange={onChange}
         onFocus={onFocus}
+        onKeyUp={onKeyUp}
         ref={input => {
           this.input = input
         }}
