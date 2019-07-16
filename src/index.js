@@ -194,6 +194,7 @@ export default class ReactSearchBox extends Component {
     const {
       placeholder,
       onFocus,
+      onKeyUp,
       autoFocus,
       inputBoxFontColor,
       inputBoxBorderColor,
